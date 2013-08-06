@@ -13,7 +13,7 @@ Main features
 ```
 1. timeout_command can run subprocess.Popen within limited time.
 
-2. it can read stdout (stardand output) asynchronously
+2. it can read stdout (standard output) asynchronously
 ```
 
 An example is shown in the main function of timeout_command.py 
