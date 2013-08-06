@@ -4,7 +4,7 @@ timeout popen
 
 Preparation
 -----------
-You need to install unbuffer in ubuntu.
+To run the example, you need to install unbuffer on ubuntu.
 see http://manpages.ubuntu.com/manpages/lucid/man1/expect_unbuffer.1.html
 
 Main features
@@ -16,7 +16,7 @@ Main features
 2. it can read stdout (standard output) asynchronously
 
 
-An example is shown in the main function of timeout_command.py 
+An example is shown in the main function of **timeout_command.py** 
 
 Reference
 ---------
