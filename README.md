@@ -18,7 +18,9 @@ Main features
 
 An example is shown in the main function of timeout_command.py 
 
-Reference:
-http://stackoverflow.com/questions/1191374/subprocess-with-timeout
-(small bug in below function when there is too many stdout in the buffer)
-http://howto.pui.ch/post/37471155682/set-timeout-for-a-shell-command-in-python
+Reference
+---------
+
+1. http://stackoverflow.com/questions/1191374/subprocess-with-timeout
+
+2. (small bug in below function when there is too many stdout in the buffer) http://howto.pui.ch/post/37471155682/set-timeout-for-a-shell-command-in-python
