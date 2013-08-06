@@ -2,8 +2,8 @@ timeout popen
 =============
 
 
-Prepartion
-----------
+preparation
+-----------
 You need to install unbuffer in ubuntu.
 see http://manpages.ubuntu.com/manpages/lucid/man1/expect_unbuffer.1.html
 
