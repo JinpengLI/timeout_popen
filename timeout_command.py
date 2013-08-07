@@ -47,10 +47,11 @@ def timeout_command(command, timeout, is_verbose=False):
     t.start()
     out = ""
     while process.poll() is None:
-        out = out + _read_buf(q)
+        buf = _read_buf(q)
+        out = out + buf
         ## You can print out here to debug asynchronously
         if is_verbose:
-            print out
+            print buf
         time.sleep(1)
         now = datetime.datetime.now()
         if (now - start).seconds > timeout:
@@ -68,4 +69,4 @@ if __name__ == '__main__':
     cmd.append("unbuffer")
     cmd.append("python")
     cmd.append(path_speaker)
-    print timeout_command(cmd, 40)
+    print timeout_command(cmd, 40, True)
