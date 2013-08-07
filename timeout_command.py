@@ -33,7 +33,7 @@ def _read_buf(q):
     return out
 
 
-def timeout_command(command, timeout):
+def timeout_command(command, timeout, is_verbose=False):
     """call shell-command and either return its output or kill it
     if it doesn't normally exit within  seconds and return None"""
 
@@ -49,7 +49,8 @@ def timeout_command(command, timeout):
     while process.poll() is None:
         out = out + _read_buf(q)
         ## You can print out here to debug asynchronously
-        print out
+        if is_verbose:
+            print out
         time.sleep(1)
         now = datetime.datetime.now()
         if (now - start).seconds > timeout:
