@@ -69,4 +69,15 @@ if __name__ == '__main__':
     cmd.append("unbuffer")
     cmd.append("python")
     cmd.append(path_speaker)
-    print timeout_command(cmd, 40, True)
+    print  """============================================================
+Speaker.py need 20 seconds to finish, we try to run within in 30 seconds.
+============================================================
+    """
+    print timeout_command(cmd, 30, True)
+    
+    print  """============================================================
+Speaker.py need 20 seconds to finish, we try to run within in 10 seconds.
+============================================================
+    """
+    print timeout_command(cmd, 10, True)
+    

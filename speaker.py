@@ -19,3 +19,4 @@ while True:
         break
     sys.stdout.write("now is %s \n" % repr(now))
     time.sleep(1)
+print "finished"
