@@ -17,6 +17,6 @@ while True:
     now = datetime.datetime.now()
     if (now - start).seconds > duration:
         break
-    sys.stdout.write("now is %s \n" % repr(now))
+    sys.stdout.write("now is %s" % repr(now))
     time.sleep(1)
 print "finished"
